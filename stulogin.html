@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Login - DRS Institute of Technology</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body bgcolor="lightblue">
+    <h1><center>DRS Institute of Technology</center></h1>
+    <hr color="black" border="2px">
+    
+    <div class="xx">
+        <div class="inner">
+            <form style="text-align:center;">
+                <h2 id="pp"style="font-size: 24px">Student Login</h2>
+                <span id="pp">Email Address&nbsp;
+                <img src="Email-Transparent.png" width="25px" height="25px" style="vertical-align: middle;"> <br>
+                <input type="text" name="email" value="Enter your email" 
+                    onfocus="clearValue(this)" 
+                    onblur="restoreValue(this, 'Enter your email')" 
+                style="width: 450px; height: 35px"/> <br><br>
+                
+                Password
+                <img src="lock.png" width="25px" height="25px" style="vertical-align: middle;"> <br>
+                <input type="password" name="pass" value="Enter your password" 
+                    onfocus="clearValue(this)" 
+                    onblur="restoreValue(this, 'Enter your password')" style="width: 450px; height: 35px" 
+                /><br><br>
+                <a href="studentscreen.html">
+                <button type="button">Login</button></a><br><br>
+                <center><a href="forgotpass.html">Forgot Password?</a></center>
+                <a href="index.html" style="display: block; text-align: right; text-decoration: underline; padding-right:4px;color:red;"><i>Home Page</i></a>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function clearValue(inputField) {
+            if (inputField.value === 'Enter your email' || inputField.value === 'Enter your password') {
+                inputField.value = '';
+            }
+        }
+
+        function restoreValue(inputField, placeholder) {
+            if (inputField.value === '') {
+                inputField.value = placeholder;
+            }
+        }
+    </script>
+</body>
+</html>
